@@ -1,0 +1,99 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #2b1b14;
+  background: #f5eee5;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  margin: 0;
+  padding: 24px;
+  place-items: center;
+}
+
+#root {
+  width: min(100%, 440px);
+}
+
+.order {
+  padding: clamp(20px, 6vw, 36px);
+  border: 1px solid #e3d5c8;
+  border-radius: 24px;
+  background: #fffaf4;
+  box-shadow: 0 16px 40px #47291112;
+}
+
+.lesson {
+  margin: 0 0 12px;
+  color: #794327;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 7vw, 2.75rem);
+  line-height: 1.1;
+}
+
+.description {
+  margin: 12px 0 0;
+  color: #685246;
+}
+
+.details {
+  display: grid;
+  gap: 12px;
+  margin: 28px 0 20px;
+}
+
+.details > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 12px;
+}
+
+.details dd {
+  margin: 0;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.total {
+  align-items: baseline;
+  padding-top: 12px;
+  border-top: 1px solid #e3d5c8;
+  font-weight: 700;
+}
+
+.total dd {
+  font-size: 1.5rem;
+}
+
+button {
+  width: 100%;
+  padding: 12px 16px;
+  border: 0;
+  border-radius: 12px;
+  background: #7a4126;
+  color: #fffaf4;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}
+
+button:hover {
+  background: #63331e;
+}
+
+button:focus-visible {
+  outline: 3px solid #794327;
+  outline-offset: 3px;
+}
